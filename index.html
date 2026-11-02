@@ -2,28 +2,129 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f7f6f2">
-<meta name="description" content="Wishing Star Farms, a family-owned farm in Tehama County, Northern California.">
-<title>Wishing Star Farms | Coming Soon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f1e8">
+<meta name="description" content="Wishing Star Farms is a family-owned farm in Tehama County, Northern California, growing with care for the land and the animals who call it home.">
+<title>Wishing Star Farms | Tehama County, California</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f6f2;color:#24231f;font-family:Georgia,"Times New Roman",serif}
-header,main,footer{width:min(1100px,92vw);margin:auto}header{padding:2rem 0 1rem;text-align:center}
-.logo{display:block;width:min(74vw,390px);height:auto;margin:0 auto}
-.hero{text-align:center;padding:1rem 0 4rem}h1{font-size:clamp(1.8rem,5vw,3.4rem);font-weight:400;letter-spacing:.13em;text-transform:uppercase;margin:1.1rem 0 .7rem}
-.hero p{font:1rem/1.7 system-ui,sans-serif;color:#656158;letter-spacing:.04em;margin:0}
-section{padding:3rem 0;border-top:1px solid #d9d5cb}h2{font-size:clamp(1.4rem,3vw,2rem);font-weight:400;letter-spacing:.08em;text-align:center;margin:0 0 1.6rem}
-.about{max-width:760px;margin:auto;font:1.03rem/1.85 system-ui,sans-serif;color:#4e4b45}.about p{margin:0 0 1rem}.about strong{font-family:Georgia,serif;color:#24231f}
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.gallery img{width:100%;height:240px;object-fit:cover;display:block;border-radius:2px}
-footer{text-align:center;padding:2rem 0 3rem;font: .85rem system-ui,sans-serif;color:#777}
-@media(max-width:650px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery img{height:170px}section{padding:2.4rem 0}}
+:root{--cream:#f4f1e8;--paper:#fbfaf6;--ink:#24271f;--muted:#686d60;--green:#394b37;--green2:#53664b;--line:#deded2;--gold:#b18c55}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+img{max-width:100%}
+.site-shell{width:min(1160px,calc(100% - 44px));margin:auto}
+.topline{height:7px;background:var(--green)}
+header{padding:30px 0 22px;display:flex;align-items:center;justify-content:center}
+.brand{display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit}
+.brand img{width:102px;height:102px;object-fit:contain}
+.brand-copy{display:flex;flex-direction:column;gap:5px}
+.brand-name{font:500 1.4rem "Playfair Display",Georgia,serif;letter-spacing:.16em;text-transform:uppercase}
+.brand-place{font-size:.68rem;letter-spacing:.23em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;justify-content:center;gap:32px;padding:14px 0 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav a{font-size:.73rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--green);font-weight:600}
+nav a:hover{color:var(--gold)}
+.hero{position:relative;min-height:510px;margin:26px 0 0;display:grid;place-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(19,29,20,.62),rgba(19,29,20,.2)),url("farm-home.jpg") center 53%/cover}
+.hero:after{content:"";position:absolute;inset:15px;border:1px solid rgba(255,255,255,.48);pointer-events:none}
+.hero-content{position:relative;z-index:1;text-align:center;color:#fff;padding:70px 24px;max-width:780px}
+.eyebrow{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:#e8dfc9}
+.hero h1{font:400 clamp(2.7rem,7vw,5.5rem)/1.08 "Playfair Display",Georgia,serif;margin:18px 0 14px}
+.hero p{font-size:1rem;line-height:1.8;letter-spacing:.035em;margin:0 auto;max-width:520px;color:#f4f1e8}
+.hero-tag{display:inline-block;margin-top:30px;padding:12px 24px;border:1px solid rgba(255,255,255,.72);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase}
+main{background:var(--paper);box-shadow:0 12px 45px rgba(39,43,33,.06)}
+.intro{padding:82px 9% 78px;text-align:center}
+.section-kicker{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h2{font:400 clamp(2rem,4vw,3rem)/1.2 "Playfair Display",Georgia,serif;color:var(--green);margin:16px 0 24px}
+.about{max-width:760px;margin:0 auto;text-align:left;color:#55594f;font-size:.98rem;line-height:1.95}
+.about p{margin:0 0 17px}
+.about strong{font-family:"Playfair Display",Georgia,serif;font-weight:600;color:var(--green);font-size:1.1rem}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:46px auto 0;max-width:850px;padding-top:34px;border-top:1px solid var(--line)}
+.value{padding:0 10px}
+.value-mark{font:1.55rem "Playfair Display",Georgia,serif;color:var(--gold)}
+.value h3{font:500 1rem "Playfair Display",Georgia,serif;color:var(--green);margin:10px 0}
+.value p{font-size:.78rem;line-height:1.7;color:var(--muted);margin:0}
+.gallery-section{padding:72px 6% 82px;background:#eeede4;text-align:center}
+.gallery-section h2{margin-bottom:10px}
+.gallery-note{font-size:.85rem;color:var(--muted);margin:0 0 34px;line-height:1.7}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:185px;gap:12px;text-align:left}
+.gallery figure{margin:0;position:relative;overflow:hidden;background:#ddd}
+.gallery figure:nth-child(1){grid-column:span 5;grid-row:span 2}
+.gallery figure:nth-child(2){grid-column:span 4;grid-row:span 1}
+.gallery figure:nth-child(3){grid-column:span 3;grid-row:span 1}
+.gallery figure:nth-child(4){grid-column:span 4;grid-row:span 1}
+.gallery figure:nth-child(5){grid-column:span 3;grid-row:span 1}
+.gallery figure:nth-child(6){grid-column:span 4;grid-row:span 1}
+.gallery figure:nth-child(7){grid-column:span 3;grid-row:span 1}
+.gallery figure:nth-child(8){grid-column:span 3;grid-row:span 1}
+.gallery figure:nth-child(9){grid-column:span 3;grid-row:span 1}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.gallery figure:hover img{transform:scale(1.045)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:25px 14px 12px;background:linear-gradient(transparent,rgba(15,20,14,.66));color:#fff;font-size:.67rem;letter-spacing:.13em;text-transform:uppercase}
+.closing{padding:68px 24px;text-align:center;background:var(--green);color:#f5f1e7}
+.closing .section-kicker{color:#d7c49d}
+.closing h2{color:#fff;margin:14px 0}
+.closing p{font-size:.88rem;color:#e2e5db;line-height:1.8;margin:0 auto;max-width:540px}
+footer{padding:30px 0 38px;text-align:center;color:var(--muted);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase}
+footer span{display:block;margin-top:8px;color:#85897e;font-size:.64rem;letter-spacing:.08em}
+@media(max-width:760px){
+ .site-shell{width:min(100% - 28px,1160px)}
+ header{padding:20px 0 15px}
+ .brand img{width:78px;height:78px}
+ .brand-name{font-size:1.12rem;letter-spacing:.12em}
+ .brand-place{font-size:.58rem}
+ nav{gap:20px;padding:13px 0 16px}
+ nav a{font-size:.63rem}
+ .hero{min-height:430px;margin-top:14px}
+ .intro{padding:58px 8%}
+ .values{gap:12px}
+ .value{padding:0 3px}
+ .value h3{font-size:.9rem}
+ .value p{font-size:.7rem}
+ .gallery-section{padding:56px 5% 62px}
+ .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:155px;gap:9px}
+ .gallery figure:nth-child(n){grid-column:span 1;grid-row:span 1}
+ .gallery figure:nth-child(1),.gallery figure:nth-child(6){grid-column:span 2}
+}
+@media(max-width:420px){
+ .brand{gap:11px}
+ .brand img{width:66px;height:66px}
+ .brand-name{font-size:.98rem}
+ .brand-place{font-size:.52rem;letter-spacing:.16em}
+ nav{gap:14px}
+ .hero{min-height:380px}
+ .hero p{font-size:.9rem}
+ .gallery{grid-auto-rows:128px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery img{transition:none}}
 </style>
 </head>
 <body>
-<header><img class="logo" src="assets/wishingstar-logo.png" alt="Wishing Star Farms, Tehama County, California"></header>
+<div class="topline"></div>
+<div class="site-shell">
+<header>
+<a class="brand" href="#" aria-label="Wishing Star Farms home">
+<img src="wishingstar-logo.png" alt="Wishing Star Farms logo">
+<span class="brand-copy"><span class="brand-name">Wishing Star Farms</span><span class="brand-place">Tehama County · California</span></span>
+</a>
+</header>
+<nav aria-label="Main navigation">
+<a href="#about">Our Farm</a>
+<a href="#gallery">Farm Life</a>
+<a href="#contact">Our Story</a>
+</nav>
+<div class="hero">
+<div class="hero-content">
+<div class="eyebrow">Rooted in the Northern California countryside</div>
+<h1>A Farm in the Making.<br>A Vision for Generations.</h1>
+<p>Thoughtfully growing a place where good land, healthy animals, and a little country living belong together.</p>
+<div class="hero-tag">Growing with purpose · Opening our story soon</div>
+</div>
+</div>
 <main>
-<div class="hero"><h1>Coming Soon</h1><p>Our little corner of the countryside is growing.</p></div>
-<section id="about">
+<section class="intro" id="about">
+<div class="section-kicker">A little about us</div>
 <h2>Welcome to Wishing Star Farms</h2>
 <div class="about">
 <p>Nestled in the heart of Northern California, Wishing Star Farms is a small, family-owned farm built on a love for the land, a passion for animals, and a dream of creating something lasting.</p>
@@ -33,19 +134,35 @@ footer{text-align:center;padding:2rem 0 3rem;font: .85rem system-ui,sans-serif;c
 <p>We're still growing, learning, and figuring things out along the way, but we're proud of what we're building and grateful to share the journey with you.</p>
 <p><strong>Thanks for being part of our story.</strong></p>
 </div>
-</section>
-<section id="life-on-the-farm">
-<h2>Life on the Farm</h2>
-<div class="gallery">
-<img src="assets/farm-pond.jpg" alt="Ducks and geese enjoying the farm pond" loading="lazy">
-<img src="assets/farm-geese.jpg" alt="The farm's geese" loading="lazy">
-<img src="assets/farm-sheep.jpg" alt="Sheep grazing beneath the trees" loading="lazy">
-<img src="assets/farm-goats.jpg" alt="The farm's goats" loading="lazy">
-<img src="assets/farm-home.jpg" alt="The farmhouse at sunset" loading="lazy">
-<img src="assets/farm-barn.jpg" alt="The farm barn and pasture" loading="lazy">
+<div class="values" aria-label="Our farm values">
+<div class="value"><div class="value-mark">I</div><h3>Care for the Land</h3><p>Building healthier pastures and a more diverse, resilient farm landscape.</p></div>
+<div class="value"><div class="value-mark">II</div><h3>Thoughtful Animal Care</h3><p>Healthy animals, attentive husbandry, and room to grow and thrive.</p></div>
+<div class="value"><div class="value-mark">III</div><h3>Built for the Long Run</h3><p>A family farm shaped with patience, purpose, and future generations in mind.</p></div>
 </div>
 </section>
+<section class="gallery-section" id="gallery">
+<div class="section-kicker">Scenes from our place</div>
+<h2>Life on the Farm</h2>
+<p class="gallery-note">A few glimpses of the animals, the land, and the work that make Wishing Star Farms home.</p>
+<div class="gallery">
+<figure><img src="farm-pond.jpg" alt="Ducks and geese enjoying the farm pond" loading="lazy"><figcaption>Pond Life</figcaption></figure>
+<figure><img src="farm-geese.jpg" alt="Our geese and ducks" loading="lazy"><figcaption>The Flock</figcaption></figure>
+<figure><img src="farm-sheep.jpg" alt="Sheep grazing beneath the trees" loading="lazy"><figcaption>Out to Pasture</figcaption></figure>
+<figure><img src="farm-goats.jpg" alt="Our goats in the sunshine" loading="lazy"><figcaption>Meet the Goats</figcaption></figure>
+<figure><img src="farm-home.jpg" alt="The farmhouse at sunset" loading="lazy"><figcaption>Home</figcaption></figure>
+<figure><img src="farm-barn.jpg" alt="The red farm barn and surrounding pasture" loading="lazy"><figcaption>Room to Grow</figcaption></figure>
+<figure><img src="farm-sheep-barn.jpg" alt="Sheep gathered safely inside their shelter" loading="lazy"><figcaption>Evening at the Barn</figcaption></figure>
+<figure><img src="farm-dog1.jpg" alt="One of our farm dogs keeping watch" loading="lazy"><figcaption>Farm Companions</figcaption></figure>
+<figure><img src="farm-dog2.jpg" alt="One of our dogs enjoying the green pasture" loading="lazy"><figcaption>On Watch</figcaption></figure>
+</div>
+</section>
+<section class="closing" id="contact">
+<div class="section-kicker">The next chapter is growing</div>
+<h2>Thanks for stopping by.</h2>
+<p>Wishing Star Farms is growing thoughtfully, one season and one project at a time. We look forward to sharing more of the journey as our farm continues to take shape.</p>
+</section>
 </main>
-<footer>Wishing Star Farms · Tehama County, California</footer>
+<footer>Wishing Star Farms · Tehama County, California<span>Family-owned · Land-minded · Growing with purpose</span></footer>
+</div>
 </body>
 </html>
